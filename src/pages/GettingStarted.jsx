@@ -14,12 +14,6 @@ const GettingStarted = () => {
   const [addedToWaitList, setAddedToWaitList] = useState();
   const [error, setError] = useState({ name: "", email: "" });
 
-  console.log(
-    `LIVE URL - ${import.meta.env.VITE_LOCAL_SERVER_URL}/users/wait-list`
-  );
-
-  console.log(import.meta.env);
-
   const setAnError = (type, error) => {
     setError((prev) => ({ ...prev, [type]: error }));
   };

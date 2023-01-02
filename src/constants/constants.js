@@ -1,5 +1,4 @@
 const serverEnv = import.meta.env.MODE;
-console.log(serverEnv);
 
 const constants = {
   serverUrl:
