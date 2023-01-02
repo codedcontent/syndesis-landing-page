@@ -6,6 +6,8 @@ import Intro from "./pages/Intro";
 import ContactUs from "./pages/ContactUs";
 import GettingStarted from "./pages/GettingStarted";
 
+console.log(import.meta.env.MODE);
+
 const router = createBrowserRouter([
   {
     path: "/",
