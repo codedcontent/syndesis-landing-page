@@ -1,0 +1,28 @@
+
+
+.card-shrink {
+    overflow-y: hidden;
+    animation: card-shrink-effect 0.7s ease-in-out;
+}
+
+.card-shrink > div {
+    animation: card-content-shrink-effect 1s ease-in;
+}
+
+@keyframes card-shrink-effect {
+    0% {
+        transform: scale(1000%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes card-content-shrink-effect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,28 @@
+
+
+.card-grow-up {
+    overflow-y: hidden;
+    animation: card-grow-up-effect 0.5s ease-in-out;
+}
+
+.card-grow-up > div {
+    animation: card-content-grow-up-effect 0.8s ease-in;
+}
+
+@keyframes card-grow-up-effect {
+    0% {
+        transform: scale(0%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes card-content-grow-up-effect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

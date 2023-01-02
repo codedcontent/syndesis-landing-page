@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-in {
+    animation: slide-in-effect 0.5s ease-in-out;
+}
+
+@keyframes slide-in-effect {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slide-up {
+    animation: slide-up-effect 0.5s ease-in-out;
+}
+
+@keyframes slide-up-effect {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.appear {
+    animation: appear-effect 1s ease-in-out;
+}
+
+@keyframes appear-effect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
