@@ -1,11 +1,11 @@
 import { CircularProgress } from "@mui/material";
-import axios from "axios";
 import React, { useState } from "react";
 import heroImg from "../assets/wait-unsplash.jpg";
 import CustomButton from "../components/CustomButton";
 import CustomTextField from "../components/CustomTextField";
 import * as EmailValidator from "email-validator";
 import constants from "../constants/constants";
+import axios from "axios";
 
 const GettingStarted = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
